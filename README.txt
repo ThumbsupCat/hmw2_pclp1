@@ -12,3 +12,6 @@ Task3:
 
 Am folosit un vector de frecventa pentru a contoriza de cate ori apare fiecare douagrama si de asemenea si un vector de douagrame. Ca sa evit douagramele sa se mai numere o data in cazul "is a" si "is an" am pus space intre douagrame initial si le-am sters
 cand a fost nevoie sa le introduc in vectorul de douagrame.
+
+
+Homework link: https://ocw.cs.pub.ro/courses/programare/teme_2021/tema2_2021_cbd
