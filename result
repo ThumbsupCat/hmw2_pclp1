@@ -1,0 +1,161 @@
+
+Run cpplint
+
+Task1.c:1:  Include the directory when naming .h files  [build/include_subdir] [4]
+Task2.c:1:  Include the directory when naming .h files  [build/include_subdir] [4]
+Task3.c:1:  Include the directory when naming .h files  [build/include_subdir] [4]
+tema2.c:1:  Include the directory when naming .h files  [build/include_subdir] [4]
+Done processing Task1.c
+Done processing Task2.c
+Done processing Task3.c
+Done processing tema2.c
+Total errors found: 4
+
+Run clang-tidy-12
+
+23 warnings generated.
+61 warnings generated.
+86 warnings generated.
+100 warnings generated.
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:9:31: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        oglindit = oglindit * 10 + copie_nr % 10;
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:9:47: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        oglindit = oglindit * 10 + copie_nr % 10;
+                                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:10:21: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        copie_nr /= 10;
+                    ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:28:9: warning: variable 'n' is not initialized [cppcoreguidelines-init-variables]
+    int n, m, matrix[NMAX][NMAX]={0}, i = 0 , j = 0, count = 1;
+        ^
+          = 0
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:28:12: warning: variable 'm' is not initialized [cppcoreguidelines-init-variables]
+    int n, m, matrix[NMAX][NMAX]={0}, i = 0 , j = 0, count = 1;
+           ^
+             = 0
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:35:11: warning: variable 'p' is not initialized [cppcoreguidelines-init-variables]
+    char *p, *rest = NULL;  // Pentru impartire in coduri si restul de sir
+          ^
+            = NULL
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:62:24: warning: variable 'X' is not initialized [cppcoreguidelines-init-variables]
+            int K = 0, X;
+                       ^
+                         = 0
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:64:25: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+                K = K * 10 + (*(p + k) - '0');
+                        ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task1.c:66:21: warning: 100 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            X = K % 100;
+                    ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:5:13: warning: narrowing conversion from 'unsigned long' to signed type 'int' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+    int n = strlen(s);
+            ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:7:14: warning: variable 'temp' is not initialized [cppcoreguidelines-init-variables]
+        char temp;
+             ^
+                  = 0
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:42:37: warning: 11 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+void decriptare_vigenere(char cheie[11], char text[SMAX]) {
+                                    ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:72:14: warning: narrowing conversion from 'unsigned long' to signed type 'int' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+    int l1 = strlen(nr1), l2 = strlen(nr2);
+             ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:72:32: warning: narrowing conversion from 'unsigned long' to signed type 'int' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+    int l1 = strlen(nr1), l2 = strlen(nr2);
+                               ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:79:24: warning: narrowing conversion from 'int' to signed type 'char' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+            *(S + k) = suma % 10 + '0';
+                       ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:79:31: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            *(S + k) = suma % 10 + '0';
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:82:27: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            rest = suma / 10;
+                          ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:86:24: warning: narrowing conversion from 'int' to signed type 'char' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+            *(S + k) = suma % 10 + '0';
+                       ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:86:31: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            *(S + k) = suma % 10 + '0';
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:89:27: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            rest = suma / 10;
+                          ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:94:24: warning: narrowing conversion from 'int' to signed type 'char' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+            *(S + k) = suma % 10 + '0';
+                       ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:94:31: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            *(S + k) = suma % 10 + '0';
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:97:27: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            rest = suma / 10;
+                          ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:101:24: warning: narrowing conversion from 'int' to signed type 'char' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+            *(S + k) = suma % 10 + '0';
+                       ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:101:31: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            *(S + k) = suma % 10 + '0';
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:104:27: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+            rest = suma / 10;
+                          ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:108:20: warning: narrowing conversion from 'int' to signed type 'char' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+        *(S + k) = rest + '0';
+                   ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:127:16: warning: 15 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    char cifru[15];  // recunoasterea comenzii de catre program
+               ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:129:18: warning: 14 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    fgets(cifru, 14, stdin);
+                 ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:133:13: warning: variable 'K' is not initialized [cppcoreguidelines-init-variables]
+        int K;
+            ^
+              = 0
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:139:29: warning: 11 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        char cheie_vigenere[11], S[SMAX];
+                            ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:140:31: warning: 10 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        fgets(cheie_vigenere, 10, stdin);
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task2.c:146:13: warning: variable 'K' is not initialized [cppcoreguidelines-init-variables]
+        int K;
+            ^
+              = 0
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:10:12: warning: narrowing conversion from 'unsigned long' to signed type 'int' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+    lung = strlen(sirinitial);
+           ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:11:18: warning: narrowing conversion from 'unsigned long' to signed type 'int' is implementation-defined [cppcoreguidelines-narrowing-conversions]
+    douagrlung = strlen(douagr);
+                 ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:27:14: warning: 10001 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    char sir[10001], copiesir[10001], ngrame[500][500], *p;
+             ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:27:31: warning: 10001 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    char sir[10001], copiesir[10001], ngrame[500][500], *p;
+                              ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:27:46: warning: 500 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    char sir[10001], copiesir[10001], ngrame[500][500], *p;
+                                             ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:27:51: warning: 500 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    char sir[10001], copiesir[10001], ngrame[500][500], *p;
+                                                  ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:27:58: warning: variable 'p' is not initialized [cppcoreguidelines-init-variables]
+    char sir[10001], copiesir[10001], ngrame[500][500], *p;
+                                                         ^
+                                                           = NULL
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:28:19: warning: 500 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    char previous[500], *rest = NULL;  // cuvantul de dinainte si rest de sir
+                  ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:29:21: warning: 500 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+    int k = 1, freq[500];
+                    ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:50:24: warning: 500 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        char douagrama[500];
+                       ^
+/mnt/c/Users/Alice/Desktop/cursuri/Laboratoare/tema2/Task3.c:70:29: warning: 500 is a magic number; consider replacing it with a named constant [cppcoreguidelines-avoid-magic-numbers]
+        memcpy(previous, p, 500);
+                            ^
+Suppressed 56 warnings (56 in non-user code).
+Use -header-filter=.* to display errors from all non-system headers. Use -system-headers to display errors from system headers as well.
